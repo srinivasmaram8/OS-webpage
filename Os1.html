@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        #design1{
+            border: 2px solid black;
+            width: 32%;
+            margin: auto;
+            padding: 20px;
+            height: 200px;
+        }
+        #txt {
+    font-size: larger;
+    border: 1px solid black;
+    width: 100%;
+    text-align: center; /* Center the text horizontally */
+    background-color: black;
+    color: white;
+    opacity: 0.8;
+    padding: 20px;
+}
+
+#txt1 {
+    background-color: rgb(97, 191, 144);
+    opacity: 0.8;
+    font-size: 20px;
+    float: left;
+    clear: both;
+    color: black; /* Set text color to black for better contrast */
+}
+
+#txt2 {
+    background-color: rgb(94, 39, 128);
+    opacity: 0.8;
+    font-size: 20px;
+    float: right;
+}
+
+#txt3 {
+    background-color: rgb(163, 174, 13);
+    opacity: 0.8;
+    font-size: 20px;
+    float: left;
+    clear: both;
+   
+}
+
+#txt4 {
+    background-color: rgba(197, 25, 111, 0.701);
+    opacity: 0.8;
+    font-size: 20px;
+    float: right;
+  
+}
+
+#txt5 {
+    background-color: rgb(13, 142, 197);
+    opacity: 0.8;
+    font-size: 20px;
+    float: left;
+    
+    color: black; /* Set text color to black for better contrast */
+}
+
+#txt6 {
+    background-color: rgba(179, 26, 26, 0.958);
+    opacity: 0.8;
+    font-size: 20px;
+    float: right;
+    margin-right: 38px;
+    
+}
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="design1">
+    <button id="txt" >Operating System</button>
+    <br><br>
+    <button id="txt1">1.Linux basic commands</button>
+    <button id="txt2">4.Memory Management</button>
+    <br><br>
+    <button id="txt3">2.Process Management</button>
+    <button id="txt4">5.Storage Management</button>
+    <br><br>
+    <button id="txt5">3.Deadlock Management</button>
+    <button id="txt6">6.File Management</button>
+</div>
+   
+    <script>
+       document.getElementById("txt1").onclick = function () {
+        location.href = "OS-1.html";
+    };
+
+    document.getElementById("txt3").onclick = function () {
+        location.href = "OsCPUScheduling.html";
+    };
+
+    document.getElementById("txt5").onclick = function () {
+        location.href = "Banker.html";
+    };
+    
+    document.getElementById("txt2").onclick = function () {
+        location.href = "Mm.html";
+    }
+
+    document.getElementById("txt4").onclick = function () {
+        location.href = "Simulate.html";
+    }
+       
+      
+
+       
+    </script>
+
+  
+</body>
+</html>

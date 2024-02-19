@@ -1,0 +1,458 @@
+<html>
+    <head>
+        <title>Welcome to my project | Srinivas</title>
+        <style>
+            body{
+             background-color: aliceblue;
+            }
+            #column1 {
+             float: left;
+             width: 100%;
+             height: 100%;
+             background-size: 100% 100%;
+            }
+            .row::after{
+                content: "";
+                display: table;
+                clear: both;
+            }
+            .popup.active.overlay{
+                display: block;
+            }
+            .header h3{
+                width: 330px;
+                font-size: 30px;
+                border: 2px solid black;
+                padding: 2px;
+                text-align: center;
+                background-color: rgb(8, 8, 8);
+                color: white;
+            }
+            .popup .overlay{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                width: 100vw;
+                height: 100vh;
+                background:rgba(0, 0, 0, 0.7);
+                z-index: 1;
+                display: none;
+            }
+            .popup .content{
+                position: absolute; 
+                top: 60%;
+                left:50%;
+                transform:translate(-50%,-50%) scale(0);
+                background: rgb(37, 213, 216);
+                width: 500px;
+                height: 450px;
+                z-index: 2;
+                text-align: center;
+                padding: 20px;
+                font-size: 20px;
+                box-sizing: border-box;
+    	        border-radius: 20px;
+            }
+            .popup .closeBtn{
+                cursor: pointer;
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                width: 30px;
+                height: 30px;
+                background: rgb(81, 44, 161);
+                color: rgb(6, 6, 6);
+                font-size: 20px;
+                font-weight: 600;
+                line-height: 28px;
+                text-align: center;
+                border-radius: 20px;
+            }
+            .popup.active .content{
+                transition: all 300ms ease-in-out;
+                transform: translate(-50%,-50%) scale(1);
+
+            }
+
+        </style>
+<script>
+    function togglePopup1(){
+        document.getElementById("popup1").classList.toggle("active");
+    }
+    function togglePopup2(){
+        document.getElementById("popup2").classList.toggle("active");
+    }
+    function togglePopup3(){
+        document.getElementById("popup3").classList.toggle("active");
+    }
+    function togglePopup4(){
+        document.getElementById("popup4").classList.toggle("active");
+    }
+    function togglePopup5(){
+        document.getElementById("popup5").classList.toggle("active");
+    }
+    function togglePopup6(){
+        document.getElementById("popup6").classList.toggle("active");
+    }
+    function togglePopup7(){
+        document.getElementById("popup7").classList.toggle("active");
+    }
+    function togglePopup8(){
+        document.getElementById("popup8").classList.toggle("active");
+    }
+    function togglePopup9(){
+        document.getElementById("popup9").classList.toggle("active");
+    }
+     function togglePopup10(){
+        document.getElementById("popup10").classList.toggle("active");
+    }
+    function togglePopup11(){
+        document.getElementById("popup11").classList.toggle("active");
+    }
+    function togglePopup12(){
+        document.getElementById("popup12").classList.toggle("active");
+    }
+    function togglePopup13(){
+        document.getElementById("popup13").classList.toggle("active");
+    }
+    function togglePopup14(){
+        document.getElementById("popup14").classList.toggle("active");
+    }
+    function togglePopup15(){
+        document.getElementById("popup15").classList.toggle("active");
+    }
+    function togglePopup16(){
+        document.getElementById("popup16").classList.toggle("active");
+    }
+    function togglePopup17(){
+        document.getElementById("popup17").classList.toggle("active");
+    }
+    
+</script>
+</head>
+<body>
+    <div class="row">
+        <div id="col1"></div>
+        <div style="padding-left: 10px;"></div>
+        <h1><center>Basic Linux Commands</center></h1>
+        <table>
+            <tr>
+                <td>
+                    <div class="popup" id="popup1">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="content">
+                        <div class="closeBtn" onclick="togglePopup1()">&times;</div>
+                        <h3>ls</h3>
+                        <p> ls command:
+                            The ls command is used to view the contents of a directory. By default, this command will
+                            display the contents of your current working directory. If you want to see the content of other directories,
+                            type ls and then the directory's path. ex, enter ls/home/username/Documents to view the content of Documents
+
+                            There are variations you can use with the ls command:
+                            <ul>
+                                <li> ls-R will list all the files in the sub-directories as well</li>
+                                <li>ls-a will show the hidden files</li>
+                                <li>ls-al will list the files and directories with detailed info like permissions,size,owner, etc</li>
+                            </ul> 
+
+                        </p>
+                        </div>
+                        </div>
+                </td>
+                <td>
+                    <div class="popup" id="popup2">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="content">
+                            <div class="closeBtn" onclick="togglePopup2()">&times;</div>
+                            <h3>top</h3>
+                            <p>The top (table of processes) command shows a real-time view of running processes in Linux and displays kernel-managed tasks. The command also provides a system information summary that shows resource utilization, including CPU and memory usage
+                            </p>
+                        </div>
+
+                    </div>
+                </td>
+                <td>
+                    <div class="popup" id="popup3">
+                        <div class="overlay">
+
+                        </div>
+                        <div class="content">
+                            <div class="closeBtn" onclick="togglePopup3()">&times;</div>
+                            <h3>mkdir</h3>
+                            <p>mkdir command in Linux allows the user to create directories (also referred to as folders in some operating systems ). 
+                                This command can create multiple directories at once as well as set the permissions for the directories. It is important to note that the user executing this command must have enough permissions to create a directory in the parent directory, 
+                                or he/she may receive a 'permission denied' error.
+                            </p>
+                        </div>
+                    </div>
+                    </td>
+                    <td>
+                        <div class="popup" id="popup4">
+                            <div class="overlay">
+
+                            </div>
+                            <div class="content">
+                                <div class="closeBtn" onclick="togglePopup4()">&times;</div>
+                                <h3>rm</h3>
+                                <p>
+                                    rm stands for remove here. rm command is used to remove objects such as files, directories, symbolic links and so on from the file system like UNIX. To be more precise, rm removes references to objects from the filesystem, where those objects might have had multiple references (for example, a file with two different names). By default, it does not remove directories.
+                                    This command normally works silently and you should be very careful while running rm command because once you delete the files then you are not able to recover the contents of files and directories.
+                                    
+                                     </p>
+                            </div>
+                        </div>
+                    </td>
+                        <td>
+                            <div class="popup" id="popup5">
+                                <div class="overlay">
+
+                                </div>
+                                <div class="content">
+                                    <div class="closeBtn" onclick="togglePopup5()">&times;</div>
+                                    <h3>rmdir</h3>
+                                    <p>The rmdir command removes the directory, specified by the Directory parameter, from the system. 
+                                        The directory must be empty before you can remove it, and you must have write permission in its parent directory. Use the ls -al command to check whether the directory is empty. </p>
+                                </div>
+                            </div>
+                        </td>
+                            <td>
+                                <div class="popup" id="popup6">
+                                    <div class="overlay">
+
+                                    </div>
+                                    <div class="content">
+                                        <div class="closeBtn" onclick="togglePop6()">&times;</div>
+                                        <h3>chmod</h3>
+                                        <p>
+                                            n Unix and Unix-like operating systems, 
+                                            chmod is the command and system call used to change the access permissions of file system objects (files and directories) sometimes known as modes. 
+                                            It is also used to change special mode flags such as setuid and setgid flags and a 'sticky' bit.
+                                            
+                                            
+                                             </p>
+                                    </div>
+                                </div>
+                                </td>
+                                <td>
+                                    <div class="popup" id="popup7">
+                                        <div class="overlay">
+
+                                        </div>
+                                        <div class="content">
+                                            <div class="closeBtn" onclick="togglePop7()">&times;</div>
+                                            <h3>cp</h3>
+                                            <p>cp stands for copy. This command is used to copy files or group of files or directory. 
+                                                It creates an exact image of a file on a disk with different file name. cp command require at least two filenames in its arguments. </p>
+                                        </div>
+                                    </div>
+                                    </td>
+                                    <td>
+                                        <div class="popup" id="popup8">
+                                            <div class="overlay">
+
+                                            </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup8()">&times;</div>
+                                                <h3>cd</h3>
+                                                <p>The cd command, also known as chdir (change directory), 
+                                                    is a command-line shell command used to change the current working directory in various operating systems. It can be used in shell scripts and batch files. </p>
+                                            </div>
+                                        </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup9">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup9()">&times;</div>
+                                                <h3>pwd</h3>
+                                                <p>pwd stands for Print Working Directory. It prints the path of the working directory, starting from the root. 
+                                                   pwd is shell built-in command(pwd) or an actual binary(/bin/pwd). $PWD is an environment variable which stores the path of the current directory. </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup10">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup10()">&times;</div>
+                                                <h3>cat</h3>
+                                                <p>The cat (short for “concatenate“) command is one of the most frequently used commands in Linux/Unix-like operating systems. 
+                                                    cat command allows us to create single or multiple files, view content of a file, concatenate files and redirect output in terminal or files. </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup11">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup11()">&times;</div>
+                                                <h3>mv</h3>
+                                                <p>mv is a Unix command that moves one or more files or directories from one place to another. If both filenames are on the same filesystem, 
+                                                    this results in a simple file rename; otherwise the file content is copied to the new location and the old file is removed. </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup12">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup12()">&times;</div>
+                                                <h3>find</h3>
+                                                <p>In computing, find is a command in the command-line interpreters (shells) of a number of operating systems. 
+                                                    It is used to search for a specific text string in a file or files. The command sends the specified lines to the standard output device. </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup13">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup13()">&times;</div>
+                                                <h3>du</h3>
+                                                <p>Command du stands for Disk Usage. It is used to check the information of disk usage of files and directories on a system. 
+                                                    Command du display a list of all the files along with their respective sizes. By default, size given is in kilobytes. </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup14">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup14()">&times;</div>
+                                                <h3>kill</h3>
+                                                <p>
+                                                    In Unix and Unix-like operating systems, kill is a command used to send a signal to a process. 
+                                                    By default, the message sent is the termination signal, which requests that the process exit. 
+                                                    But kill is something of a misnomer; the signal sent may have nothing to do with process killing.
+                                
+                                                    
+                                                     </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup15">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup15()">&times;</div>
+                                                <h3>chown</h3>
+                                                <p>The command chown /'tʃoʊn/, an abbreviation of change owner, is used on Unix and Unix-like operating systems to change the owner of file system files, directories. 
+                                                    Unprivileged (regular) users who wish to change the group membership of a file that they own may use chgrp. </p>
+                                            </div>    
+                                            </div> 
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup16">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup16()">&times;</div>
+                                                <h3>tar</h3>
+                                                <p>
+                                                    The tar command stands for tape achieve, which is the most commonly used tape drive backup command used by the Linux/Unix system. 
+                                                    It allows for you to quickly access a collection of files and placed them into a highly compressed archive file commonly called tarball, or tar, gzip, and bzip in Linux
+                                                    
+                                                    
+                                                     </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="popup" id="popup17">
+                                                <div class="overlay">
+
+                                                </div>
+                                            <div class="content">
+                                                <div class="closeBtn" onclick="togglePopup17()">&times;</div>
+                                                <h3>sudo</h3>
+                                                <p>The sudo command allows you to run programs with the security privileges of another user (by default, as the superuser). 
+                                                    It prompts you for your personal password and confirms your request to execute a command by checking a file, called sudoers , which the system administrator configures. </p>
+                                            </div>    
+                                            </div>
+                                        </td>
+            </tr>
+        </table>
+        <div class="red">
+            <center>
+                <table class="table1">
+                <tr>
+                    <td><button onclick="togglePopup1()">ls</button></td>
+                    <td><button onclick="togglePopup2()">top</button></td>
+                    <td><button onclick="togglePopup3()">mkdir</button></td>
+                    <td><button onclick="togglePopup4()">rm</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="togglePopup5()">rmdir</button></td>
+                    <td><button onclick="togglePopup6()">chmod</button></td>
+                    <td><button onclick="togglePopup7()">cp</button></td>
+                    <td><button onclick="togglePopup8()">cd</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="togglePopup9()">pwd</button></td>
+                    <td><button onclick="togglePopup10()">cat</button></td>
+                    <td><button onclick="togglePopup11()">mv</button></td>
+                    <td><button onclick="togglePopup12()">find</button></td>
+                    <td><button onclick="togglePopup13()">du</button></td>
+
+                </tr>
+                <tr>
+                    <td><button onclick="togglePopup14()">kill</button></td>
+                    <td><button onclick="togglePopup15()">chown</button></td>
+                    <td><button onclick="togglePopup16()">tar</button></td>
+                    <td><button onclick="togglePopup17()">sudo</button></td>
+                </tr>
+                </table>
+            </center>
+        </div>
+    </div>
+    <script>
+        function terminalhide() {
+             var x = document.getElementById("terminal");
+              var x1 = document.getElementById("labbutton");
+              var x2 = document.getElementById("terminalframe");
+             if (x.style.height === "400px") {
+                   x1.style.backgroundColor="#4CAF50";
+                   x1.innerText="Launch lab";
+                   document.getElementById("column2").style.width="0%";
+                       document.getElementById("column1").style.width="100%";
+                   x.style.height = "0px";
+                       x2.style.height = "0px";
+             } else {
+               x1.style.backgroundColor="red";
+                   x1.innerText="Exit lab";
+                   document.getElementById("column2").style.width="25%";
+                       document.getElementById("column1").style.width="75%";
+
+                   x.style.height = "400px";
+               x2.style.height = "400px";
+                   
+             }
+       }
+    </script>
+
+
+ 
+         
+</body>
+
+
+</html>
